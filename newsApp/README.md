@@ -13,4 +13,4 @@ flutter run
 ```
 
 #### And Result:
-![Screenshot](/newsapp.png "Phone Screen")
+![Screenshot](newsapp.png "Phone Screen")
