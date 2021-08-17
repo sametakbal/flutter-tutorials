@@ -57,22 +57,23 @@ class _MyHomePageState extends State<MyHomePage> {
                 return Card(
                   child: Column(
                     children: [
-                      Image.network(articles[index].urlToImage),
+                      Image.network(articles[index].urlToImage ??
+                          'https://i0.wp.com/designermenus.com.au/wp-content/uploads/2016/02/icon-None.png?w=300&ssl=1'),
                       ListTile(
                         leading: Icon(Icons.arrow_drop_down_circle),
-                        title: Text(articles[index].title),
-                        subtitle: Text(articles[index].author),
+                        title: Text(articles[index].title ?? ''),
+                        subtitle: Text(articles[index].author ?? ''),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(16.0),
-                        child: Text(articles[index].description),
+                        child: Text(articles[index].description ?? ''),
                       ),
                       ButtonBar(
                         alignment: MainAxisAlignment.start,
                         children: [
-                          FlatButton(
+                          MaterialButton(
                               onPressed: () async {
-                                await launch(articles[index].url);
+                                await launch(articles[index].url ?? '');
                               },
                               child: Text('Habere Git')),
                         ],
