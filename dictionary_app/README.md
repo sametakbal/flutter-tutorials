@@ -1,6 +1,6 @@
 # Dictionary App
 
-[Tutorial Video](https://youtu.be/ejHci28XW2A)
+[Tutorial Video](https://youtu.be/P2o3HU-ArvA)
 
 #### Run commands
 
