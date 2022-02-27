@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "d39c268a-5700-4aaf-bfdd-42ddad3e5106",
+		"name": "TDK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sözlük",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sozluk.gov.tr/gts?ara=test",
+					"protocol": "https",
+					"host": [
+						"sozluk",
+						"gov",
+						"tr"
+					],
+					"path": [
+						"gts"
+					],
+					"query": [
+						{
+							"key": "ara",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "İşaret Dili Gif",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sozluk.gov.tr/assets/img/isaret/a.gif",
+					"protocol": "https",
+					"host": [
+						"sozluk",
+						"gov",
+						"tr"
+					],
+					"path": [
+						"assets",
+						"img",
+						"isaret",
+						"a.gif"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
