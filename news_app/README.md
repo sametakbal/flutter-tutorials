@@ -1,3 +1,3 @@
-# [Tutorial Video](https://www.youtube.com/user/aisV25)
+# [Tutorial Video](https://youtu.be/NibVIV15pqw)
 
 !["Video Link"](newsapptn.png)
