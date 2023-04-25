@@ -28,7 +28,7 @@ class _NewsPageState extends State<NewsPage> {
     final vm = Provider.of<ArticleListViewModel>(context);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Haberler'),
+        title: const Text('News'),
       ),
       body: Column(
         mainAxisSize: MainAxisSize.max,
@@ -56,7 +56,7 @@ class _NewsPageState extends State<NewsPage> {
             child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Text(
-            categories[i].title,
+            categories[i].key.toUpperCase(),
             style: const TextStyle(fontSize: 16),
           ),
         )),
@@ -93,7 +93,7 @@ class _NewsPageState extends State<NewsPage> {
                                     vm.viewModel.articles[index].url ?? ''));
                               },
                               child: const Text(
-                                'Habere Git',
+                                'Detail',
                                 style: TextStyle(color: Colors.blue),
                               ),
                             )
